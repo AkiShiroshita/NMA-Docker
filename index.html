@@ -102,8 +102,8 @@ Directory）として指定します。以下のコマンドを実行してく�
 <pre><code>cd {path}</code></pre>
 <p>例えば、城下の場合は<code>cd C:\Users\shiroa1\nma_analysis</code>を走らせます。</p>
 </div>
-<div id="step-5.-docker-コンテナを起動する" class="section level2">
-<h2><strong>Step 5. Docker コンテナを起動する</strong></h2>
+<div id="step-5.-docker-コンテナを起動する" class="section level3">
+<h3><strong>Step 5. Docker コンテナを起動する</strong></h3>
 <p>以下のコマンドを実行して Docker コンテナを起動します。</p>
 <ul>
 <li>Windows（コマンドプロンプト）の場合</li>
@@ -113,12 +113,12 @@ Directory）として指定します。以下のコマンドを実行してく�
 <li>Mac（ターミナル）の場合</li>
 </ul>
 <pre><code>docker container run --rm -e DISABLE_AUTH=true -v $PWD:/home/rstudio/project -p 8787:8787 akishiroshita/r_nma_docker</code></pre>
+</div>
 <div id="step-6.-ブラウザで-rstudio-を開く" class="section level3">
 <h3><strong>Step 6. ブラウザで RStudio を開く</strong></h3>
 <p>ブラウザで以下の URL にアクセスします：</p>
 <p><a href="http://localhost:8787" class="uri">http://localhost:8787</a></p>
 <p>RStudio が起動し、NMA を実行するための環境が整います。</p>
-</div>
 </div>
 </section>
 
